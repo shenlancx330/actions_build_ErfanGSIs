@@ -14,7 +14,7 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://bigota.d.miui.com/20.6.18/miui_MI6X_20.6.18_5810c312a5_9.0.zip
+  ROM_URL: https://vpp4mdg1r1isese38rn4dnrpocuaivkl4ud74uigpao715mfp28vul4n.qc.dolfincdnx.cn:10443/xdispatch7d510f0e7679c051/bigota.d.miui.com/20.6.18/miui_MI6X_20.6.18_5810c312a5_9.0.zip?bsreqid=cb0a398e1b021993ba895664820db405
   ROM_NAME: MIUI
   BUILD_TYPE: ab
   TZ: Asia/Shanghai
