@@ -55,7 +55,7 @@ jobs:
          run: |
               cd $GITHUB_WORKSPACE/ErfanGSIs/output
               mkdir final
-              tar -cvzf final/GSI.zip ./*
+              tar-cvzf final/GSI.zip ./*
        
        - name: Upload GSI to WeTransfer
          run: |
