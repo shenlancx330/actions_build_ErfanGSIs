@@ -14,7 +14,7 @@ on:
     types: [started]
     
 env:
-  ROM_URL: http://bigota.d.miui.com/20.4.27/miui_MIMIX3_20.4.27_8f7879221b_10.0.zip
+  ROM_URL: https://bigota.d.miui.com/20.6.18/miui_MI6X_20.6.18_5810c312a5_9.0.zip
   ROM_NAME: MIUI
   BUILD_TYPE: ab
   TZ: Asia/Shanghai
@@ -55,7 +55,7 @@ jobs:
          run: |
               cd $GITHUB_WORKSPACE/ErfanGSIs/output
               mkdir final
-              tar-cvzf final/GSI.zip ./*
+              tar -cvzf final/GSI.zip ./*
        
        - name: Upload GSI to WeTransfer
          run: |
