@@ -30,13 +30,14 @@ jobs:
            
        - name: Initialization environment
          run: |
-            sudo -E apt-get install python3.7 git wget
+            sudo -E apt-get install git wget
        
        - name: Clone ErfanGSI Source Code
          run: git clone --recurse-submodules https://github.com/erfanoabdi/ErfanGSIs.git ErfanGSIs
          
        - name: Fix exit
          run: |
+              python=python3
               sed -i 's/\|\| exit 1//g' $GITHUB_WORKSPACE/ErfanGSIs/url2GSI.sh
               sed -i 's/exit 1//g' $GITHUB_WORKSPACE/ErfanGSIs/url2GSI.sh
        
