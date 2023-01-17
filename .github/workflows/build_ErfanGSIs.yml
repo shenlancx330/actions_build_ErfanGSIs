@@ -37,7 +37,6 @@ jobs:
          
        - name: Fix exit
          run: |
-              python=python3
               sed -i 's/\|\| exit 1//g' $GITHUB_WORKSPACE/ErfanGSIs/url2GSI.sh
               sed -i 's/exit 1//g' $GITHUB_WORKSPACE/ErfanGSIs/url2GSI.sh
        
